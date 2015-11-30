@@ -1,4 +1,4 @@
-# Mandrill Template Manager(CLI)
+# Mandrill Template Manager (CLI)
 
 Manage [Mandrill Templates](https://mandrillapp.com/api/docs/templates.ruby.html) by CLI.
 
@@ -14,8 +14,10 @@ gem 'formatador', github: 'geemus/formatador'
 gem 'unicode'
 ```
 
+`$ bundle install`
+
 ```
-$ ./bin/mandrilltemplate
+$ bundle exec mandrilltemplate
 Commands:
   mandrilltemplate delete NAME                # delete template from remote.
   mandrilltemplate export NAME                # export template from remote to local files.
@@ -31,7 +33,7 @@ Commands:
 ## Workflow
 
 1. generate new or export exist template as local files.
-2. modify and manage under version controle system.
+2. modify and manage under version control system.
 3. upload template.
 4. publish it.
 
@@ -97,7 +99,7 @@ from_email: test@example.com
 from_name: Boss
 ```
 
-## Optional: render suppots Handlebars preview.
+## Optional: render supports Handlebars preview.
 
 If you would like to use handlebars template.
 You should add handlebars rubygem to Gemfile.
